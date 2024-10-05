@@ -11,6 +11,7 @@ using namespace std;
 
 int main()
 {
+	system("chcp 1251");
 	setlocale(LC_ALL, "Russian");
 	int lenMassive;
 	cout << "    Меню   " << endl;
