@@ -6,7 +6,6 @@ using namespace std;
 
 void Circule::validateRadius(double radius)
 {
-    setlocale(LC_ALL, "Russian");
     if (radius <= 0)
         throw Exception("Неверное значение radius");
 }
