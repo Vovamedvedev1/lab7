@@ -25,7 +25,7 @@ std::ostream& operator << (std::ostream& os, const Point pt)
 
 Figure::Figure()
 {
-    std::cout << "--------------делегированный Figure Constructor без параметров------------" << std::endl;
+    std::cout << "--------------Figure Constructor()------------" << std::endl;
     this->p0 = new Point();
 }
 Figure::Figure(double x0, double y0) : Figure()

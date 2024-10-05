@@ -6,21 +6,21 @@ using namespace std;
 void Triangle::validateA(double A)
 {
     if (A <= 0)
-        throw Exception("Неверное значение a");
+        throw Exception("Error a");
 }
 void Triangle::validateB(double B)
 {
     if (B <= 0)
-        throw Exception("Неверное значение b");
+        throw Exception("Error b");
 }
 void Triangle::validateCorner(double corner)
 {
     if (corner <= 0 || corner >= 180)
-        throw Exception("Неверное значение corner");
+        throw Exception("Error corner");
 }
 Triangle::Triangle() : Figure()
 {
-    std::cout << "--------------делегирующий Triangle Constructor по умолчанию------------" << std::endl;
+    std::cout << "--------------Triangle Constructor()------------" << std::endl;
     this->a = new double();
     this->b = new double();
     this->corner = new double();
@@ -64,8 +64,8 @@ double Triangle::getCorner() const
 }
 void Triangle::draw() const 
 {
-    std::cout << "Треугольник:  ";
-    std::cout << "Координаты вершины отрисовки: " << *this->p0;
+    std::cout << "Triangle:  ";
+    std::cout << "Coordinates of the rendering vertex: " << *this->p0;
     std::cout << "a: " << *(this->a) << "   b: " << *(this->b) << "   Corner: " << *(this->corner) << std::endl;
     std::cout << "Area: " << this->calcArea() << endl;
 }

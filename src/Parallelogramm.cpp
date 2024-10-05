@@ -6,22 +6,22 @@ using namespace std;
 void Parallelogram::validateHeight(double height)
 {
     if (height <= 0)
-        throw Exception("Неверное значение height");
+        throw Exception("Error height");
 }
 void Parallelogram::validateWidth(double width)
 {
     if (width <= 0)
-        throw Exception("Неверное значение width");
+        throw Exception("Error width");
 }
 void Parallelogram::validateCorner(double corner)
 {
     if (corner <= 0 || corner > 90)
-        throw Exception("Неверное значение corner");
+        throw Exception("Error corner");
 }
 
 Parallelogram::Parallelogram() : Figure()
 {
-    std::cout << "--------------делегированный Parallelogram Constructor по умолчанию------------" << std::endl;
+    std::cout << "--------------Parallelogram Constructor()------------" << std::endl;
     this->height = new double();
     this->width = new double();
     this->corner = new double();
@@ -66,10 +66,10 @@ double Parallelogram::getCorner() const
 }
 void Parallelogram::draw() const
 {
-    cout << "Параллелограмм:  ";
-    cout << "Координаты вершины отрисовки параллелограмма: " << *this->p0;
+    cout << "Parallelogram:  ";
+    cout << "Coordinates of the rendering vertex: " << *this->p0;
     cout << "Width: " << *this->width << "   Height: " << *this->height << "   Corner: " << *this->corner << endl;
-    cout << "Площадь: " << this->calcArea() << endl;
+    cout << "Area: " << this->calcArea() << endl;
 }
 double Parallelogram::calcArea() const
 {

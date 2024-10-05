@@ -7,12 +7,12 @@ using namespace std;
 void Circule::validateRadius(double radius)
 {
     if (radius <= 0)
-        throw Exception("Неверное значение radius");
+        throw Exception("Error radius");
 }
 
 Circule::Circule() : Figure()
 {
-    std::cout << "--------------делегирующий Circule Constructor по умолчанию------------" << std::endl;
+    std::cout << "--------------Circule Constructor()------------" << std::endl;
     this->radius = new double();
 }
 Circule::Circule(double x0, double y0, double radius) : Figure(x0, y0)
@@ -32,10 +32,10 @@ double Circule::getRadius() const
 }
 void Circule::draw() const
 {
-    std::cout << "Круг:  ";
-    std::cout << "Координаты центра круга: " << *this->p0;
+    std::cout << "Circule:  ";
+    std::cout << "Coords center of circule: " << *this->p0;
     std::cout << "radius: " << *(this->radius) << std::endl;
-    std::cout << "Площадь: " << this->calcArea() << std::endl;
+    std::cout << "Area: " << this->calcArea() << std::endl;
 }
 double Circule::calcArea() const
 {
