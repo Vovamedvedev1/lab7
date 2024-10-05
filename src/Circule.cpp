@@ -1,4 +1,5 @@
 #include <iostream>
+#include <locale.h>
 #include "Circule.h"
 #include "math.h"
 using namespace std;

@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <string.h>
+#include <locale.h>
 #include "include/figure.h"
 #include "include/Parallelogramm.h"
 #include "include/Triangle.h"
