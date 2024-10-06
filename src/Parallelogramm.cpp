@@ -69,7 +69,6 @@ void Parallelogram::draw() const
     cout << "Parallelogram:  ";
     cout << "Coordinates of the rendering vertex: " << *this->p0;
     cout << "Width: " << *this->width << "   Height: " << *this->height << "   Corner: " << *this->corner << endl;
-    cout << "Area: " << this->calcArea() << endl;
 }
 double Parallelogram::calcArea() const
 {

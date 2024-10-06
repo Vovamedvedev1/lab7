@@ -75,7 +75,11 @@ int main()
 
 	}
 	for (int i = 0; i < lenMassive; i++)
+	{
 		figures[i]->draw();
+		cout << "Area: " << figures[i]->calcArea() << endl;
+	}
+		
 
 
 	for (int i = 0; i < lenMassive; i++)

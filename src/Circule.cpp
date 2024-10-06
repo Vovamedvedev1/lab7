@@ -35,7 +35,6 @@ void Circule::draw() const
     std::cout << "Circule:  ";
     std::cout << "Coords center of circule: " << *this->p0;
     std::cout << "radius: " << *(this->radius) << std::endl;
-    std::cout << "Area: " << this->calcArea() << std::endl;
 }
 double Circule::calcArea() const
 {

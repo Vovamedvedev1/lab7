@@ -67,7 +67,6 @@ void Triangle::draw() const
     std::cout << "Triangle:  ";
     std::cout << "Coordinates of the rendering vertex: " << *this->p0;
     std::cout << "a: " << *(this->a) << "   b: " << *(this->b) << "   Corner: " << *(this->corner) << std::endl;
-    std::cout << "Area: " << this->calcArea() << endl;
 }
 double Triangle::calcArea() const
 {
